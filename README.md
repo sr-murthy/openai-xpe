@@ -1,2 +1,3 @@
 # openai-xpe
-Experimental prompt engineering with OpenAI
+
+OpenAI prompt evaluation.
