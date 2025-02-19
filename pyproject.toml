@@ -9,7 +9,7 @@
 #     https://packaging.python.org/en/latest/tutorials/packaging-projects/
 #
 name = "openai-xpe"
-description = "Experimental prompt engineering with OpenAI"
+description = "OpenAI prompt evaluation"
 
 authors = [
     {name = "S. R. Murthy", email = "s.murthy@tutanota.com"},
