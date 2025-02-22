@@ -7,7 +7,8 @@ from openai import OpenAI
 O1_MINI = 'o1-mini'
 GPT_4O_MINI = 'gpt-4o-mini'
 
-clients = {}
+
+CLIENTS = {}
 
 
 def get_client() -> OpenAI:
@@ -17,12 +18,13 @@ def get_client() -> OpenAI:
 
 
 def get_chat_completion(client: OpenAI, model: str, prompt: str, /) -> str:
-    """Calls the OpenAI API to get a chat completion.
+    """:py:class:`str` : Calls the OpenAI API to get a chat completion.
     """
     response = client.chat.completions.create(
         model=model,
         messages=[{"role": "user", "content": prompt}],
     )
+
     return response.choices[0].message.content
 
 
@@ -30,14 +32,13 @@ def get_chat_completion(client: OpenAI, model: str, prompt: str, /) -> str:
 @click.option('--model', type=str, required=True, help='Type of OpenAI model to use')
 @click.option('--prompt', type=str, required=True, help='Model prompt')
 def prompter(model: str, prompt: str) -> str:
-    """Provides a cursor prompt and calls ``get_chat_completion`` with the model prompt 
+    """:py:class:`str` : Calls ``get_chat_completion`` to query the model with the given prompt and prints the response.
     """
-    #import ipdb; ipdb.set_trace()
     try:
-        client = clients[model]
+        client = CLIENTS[model]
     except KeyError:
         client = get_client()
-        clients[model] = client
+        CLIENTS[model] = client
 
     print(get_chat_completion(client, model, prompt))
 
