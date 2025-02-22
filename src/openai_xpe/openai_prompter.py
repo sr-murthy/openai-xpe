@@ -11,20 +11,12 @@ __all__ = [
 # -- Standard libraries --
 import os
 
-from enum import Enum
-
 # -- 3rd party libraries --
 import click
 
 from openai import OpenAI
 
 # -- Internal libraries --
-
-
-class OPENAI_MODELS(Enum):
-
-    O1_MINI = 'o1-mini'
-    GPT_4O_MINI = 'gpt-4o-mini'
 
 
 CLIENTS = {}
