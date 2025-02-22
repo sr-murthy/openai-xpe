@@ -1,11 +1,30 @@
+__all__ = [
+    'get_client',
+    'get_chat_completion',
+    'openai_prompter',
+    'OPENAI_MODELS',
+]
+
+
+# -- IMPORTS --
+
+# -- Standard libraries --
 import os
 
+from enum import Enum
+
+# -- 3rd party libraries --
 import click
+
 from openai import OpenAI
 
+# -- Internal libraries --
 
-O1_MINI = 'o1-mini'
-GPT_4O_MINI = 'gpt-4o-mini'
+
+class OPENAI_MODELS(Enum):
+
+    O1_MINI = 'o1-mini'
+    GPT_4O_MINI = 'gpt-4o-mini'
 
 
 CLIENTS = {}
@@ -31,7 +50,7 @@ def get_chat_completion(client: OpenAI, model: str, prompt: str, /) -> str:
 @click.command
 @click.option('--model', type=str, required=True, help='Type of OpenAI model to use')
 @click.option('--prompt', type=str, required=True, help='Model prompt')
-def prompter(model: str, prompt: str) -> str:
+def openai_prompter(model: str, prompt: str) -> str:
     """:py:class:`str` : Calls ``get_chat_completion`` to query the model with the given prompt and prints the response.
     """
     try:
@@ -44,4 +63,4 @@ def prompter(model: str, prompt: str) -> str:
 
 
 if __name__ == '__main__':
-    prompter()
+    openai_prompter()
