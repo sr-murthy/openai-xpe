@@ -19,8 +19,6 @@ maintainers = [
   {name = "S. R. Murthy", email = "s.murthy@tutanota.com"}
 ]
 
-dynamic = ["version"]
-
 requires-python = ">=3.10"
 
 license = {file = "LICENSE"}
