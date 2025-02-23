@@ -1,6 +1,6 @@
 # openai-xpe
 
-A simple command line tool to run [OpenAI](https://openai.com/) model prompts and responses.
+A simple command line tool to run [OpenAI](https://openai.com/) model prompts.
 
 > [!Note]
 > You will need an [OpenAI platform API key](https://platform.openai.com/docs/api-reference/authentication) to use this tool.
