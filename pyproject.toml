@@ -34,6 +34,7 @@ readme = "README.md"
 
 keywords = [
     "ai",
+    "cli",
     "gpt",
     "openai",
 ]
@@ -75,7 +76,7 @@ Repository = "https://github.com/sr-murthy/openai-xpe"
 #     https://pdm.fming.dev/latest/reference/cli/
 #
 [tool.pdm]
-distribution = true
+distribution = false
 
 [tool.pdm.build]
 package-dir = "src"
