@@ -42,7 +42,7 @@ def get_chat_completion(client: OpenAI, model: str, prompt: str, /) -> str:
 @click.option('--model', type=str, required=True, help='Type of OpenAI model to use')
 @click.option('--prompt', type=str, required=True, help='Model prompt')
 def openai_prompter(model: str, prompt: str) -> None:
-    """:py:class:`str` : Calls ``get_chat_completion`` to query the model with the given prompt and prints the response.
+    """Calls ``get_chat_completion`` to query the model with the given prompt and prints the response.
     """
     try:
         client = CLIENTS[model]
