@@ -1,0 +1,110 @@
+[project]
+
+# PEP 621 project metadata
+# See https://www.python.org/dev/peps/pep-0621/
+
+# For the standard reference on Python packaging, including using
+# ``pyproject.toml`` for build definition and configuration see:
+#
+#     https://packaging.python.org/en/latest/tutorials/packaging-projects/
+#
+name = "openai-xpe"
+description = "OpenAI prompt evaluation"
+
+authors = [
+    {name = "S. R. Murthy", email = "s.murthy@tutanota.com"},
+]
+
+maintainers = [
+  {name = "S. R. Murthy", email = "s.murthy@tutanota.com"}
+]
+
+dynamic = ["version"]
+
+requires-python = ">=3.10"
+
+license = {file = "LICENSE"}
+
+dependencies = [
+    "click",
+    "openai",
+]
+
+readme = "README.md"
+
+keywords = [
+    "ai",
+    "gpt",
+    "openai",
+]
+
+classifiers = [
+        "Environment :: Console",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
+        "Development Status :: 1 - Planning",
+        "Operating System :: POSIX :: Linux",
+        "Operating System :: MacOS",
+        "Operating System :: Microsoft :: Windows",
+]
+
+[project.optional-dependencies]
+user = [
+    "jupyter",
+]
+
+[project.scripts]
+openai_prompter = "openai_xpe.openai_prompter:openai_prompter"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/sr-murthy/openai-xpe"
+Documentation = "https://github.com/sr-murthy/openai-xpe"
+Repository = "https://github.com/sr-murthy/openai-xpe"
+
+# For working with PDM, including configuration and usage see:
+#
+#     https://pdm.fming.dev/latest/
+#     https://pdm.fming.dev/latest/reference/pep621/
+#     https://pdm.fming.dev/latest/reference/cli/
+#
+[tool.pdm]
+distribution = true
+
+[tool.pdm.build]
+package-dir = "src"
+includes = [
+    "src/openai_xpe",
+]
+# File patterns to exclude, the paths are relative to the project root.
+excludes = [
+    "docs",
+    "build",
+    "dist",
+    "tests",
+    ".pytest_cache",
+    "*.pyc",
+    "*.env",
+    "*__pycache__*",
+]
+source-includes = [
+    "README.md",
+]
+editable-backend = "path"
+
+[tool.pdm.dev-dependencies]
+build = [
+    "pip>=23.1.2",
+    "setuptools>=61.0",
+    "setuptools.build_meta",
+]
+
+[tool.pdm.scripts]
+
+[tool.pdm.version]
