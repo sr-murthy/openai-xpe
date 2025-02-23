@@ -36,12 +36,10 @@ Some Prompts and Responses for the o1-mini
 
 The following is a listing of some random prompts to the o1-mini model, and its responses, formatted for readability. For brevity, some of the prompts include an instruction to be concise, e.g. "Please keep the answer concise", to encourage the model to be brief.
 
-### 1. Birth and Death Dates of L. v. Beethoven
+### 1. Beethoven's Birth and Death Dates
 
 The prompt:
-```bash
-$ openai_prompter --model 'o1-mini' --prompt 'When and where was the composer Ludwig van Beethoven born? When and where did he die? Please keep the answer concise.'
-```
+> When and where was the composer Ludwig van Beethoven born? When and where did he die? Please keep the answer concise.
 
 The response:
 > Ludwig van Beethoven was born on December 17, 1770, in Bonn (present-day Germany) and died on March 26, 1827, in Vienna, Austria.
@@ -49,9 +47,7 @@ The response:
 ### 2. Colour of the Sky
 
 The prompt:
-```bash
-$ openai_prompter --model 'o1-mini' --prompt 'Why does the sky appear blue? Please keep the answer concise.'
-```
+> Why does the sky appear blue? Please keep the answer concise.
 
 The response:
 > The sky appears blue because molecules in Earth's atmosphere scatter sunlight. This scattering, known as Rayleigh scattering, is more effective at shorter (blue) wavelengths. As sunlight passes through the atmosphere, the blue light is scattered in all directions, making the sky appear blue to our eyes.
@@ -59,9 +55,7 @@ The response:
 ### 3. Is Pluto a planet?
 
 The prompt:
-```bash
-$ openai_prompter --model 'o1-mini' --prompt 'Is Pluto a planet? Explain, but in a concise way'
-```
+> Is Pluto a planet? Explain, but in a concise way'
 
 The response:
 > No, Pluto is classified as a **dwarf planet**. In 2006, the International Astronomical Union redefined the criteria for planethood, requiring that a celestial body:
@@ -75,9 +69,7 @@ The response:
 ### 4. Intelligent life in the Universe
 
 The prompt:
-```bash
-$ openai_prompter --model 'o1-mini' --prompt 'Are we alone in the Universe? Please provide a concise summary of the latest findings on intelligent life in the Universe.'
-```
+> Are we alone in the Universe? Please provide a concise summary of the latest findings on intelligent life in the Universe.
 
 The response:
 > As of October 2023, there is no confirmed evidence of intelligent extraterrestrial life. Ongoing research efforts continue to explore this possibility through various avenues:
@@ -96,10 +88,8 @@ The response:
 
 ### 5. A Quick Recipe for Boiled Eggs
 
-The prompt
-```bash
-$ openai_prompter --model 'o1-mini' --prompt 'Please give me a simple recipe for boiling eggs in under 10 minutes.'
-```
+The prompt:
+> Please give me a simple recipe for boiling eggs in under 10 minutes.
 
 The response:
 > Certainly! Here's a **simple and quick method** to boil eggs in **under 10 minutes**. This method is perfect for achieving **soft to medium-boiled eggs** with set whites and slightly runny yolks.
@@ -173,9 +163,7 @@ The response:
 ### 6. Python Implementation of the Quicksort Algorithm
 
 The prompt:
-```bash
-$ openai_prompter --model "o1-mini" --prompt "Please provide a concise and typed Python implementation of the quicksort algorithm for sorting numbers. Please include docstrings and comments in the code, but omit explanations and notes."
-```
+> Please provide a concise and typed Python implementation of the quicksort algorithm for sorting numbers. Please include docstrings and comments in the code, but omit explanations and notes.
 
 The response:
 ```python
@@ -207,9 +195,7 @@ def quicksort(arr: List[Number]) -> List[Number]:
 ### 7. Beethoven's Politics
 
 The prompt:
-```bash
-$ openai_prompter --model "o1-mini" --prompt "Beethoven is said to have withdrawn the original dedication of his 3rd symphony, known as 'The Eroica', to Napoleon, in a rage, after hearing about his self-proclamation as Emperor. Was this genuinely because he was a democratic anti-imperialist, motivated by feelings of universal egalitarism, or was it simply a fit of private anger motivated by jealousy? What were his real views on democracy, monarchy and imperialism, given that throughout much of his life and career he enjoyed a high level of aristocratic and royal patronage and interest? Please be concise in your answer."
-```
+> Beethoven is said to have withdrawn the original dedication of his 3rd symphony, known as 'The Eroica', to Napoleon, in a rage, after hearing about his self-proclamation as Emperor. Was this genuinely because he was a democratic anti-imperialist, motivated by feelings of universal egalitarism, or was it simply a fit of private anger motivated by jealousy? What were his real views on democracy, monarchy and imperialism, given that throughout much of his life and career he enjoyed a high level of aristocratic and royal patronage and interest? Please be concise in your answer."
 
 The response:
 > Beethoven’s decision to withdraw the dedication of his "Eroica" Symphony from Napoleon stemmed primarily from his profound disappointment and disillusionment when Napoleon declared himself Emperor, betraying the revolutionary ideals Beethoven had admired. While this act suggests Beethoven valued republican and egalitarian principles, his motivations were likely a mix of idealistic support for democratic ideals and personal emotional response rather than mere jealousy.
@@ -219,9 +205,8 @@ The response:
 ### 8. The Universe as a Simulation
 
 The prompt:
-```bash
-$ openai_prompter --model "o1-mini" --prompt "Do we live in a simulation, and if so, why and how? Please explain concisely."
-```
+> Do we live in a simulation, and if so, why and how? Please explain concisely.
+
 
 The response:
 > The idea that we might be living in a simulation is a philosophical and scientific hypothesis known as the **simulation hypothesis**. Here's a concise overview:
@@ -249,9 +234,7 @@ The response:
 ### 9. Habermas's Theory of Communicative Action
 
 The prompt:
-```bash
-$ openai_prompter --model "o1-mini" --prompt "Concisely explain the philosopher Juergen Habermas's theory of communicative action. How is it relevant to the problems or failures of modern democracies?"
-```
+> Concisely explain the philosopher Juergen Habermas's theory of communicative action. How is it relevant to the problems or failures of modern democracies?
 
 The response:
 > Jürgen Habermas's **Theory of Communicative Action** is a foundational framework in social theory and philosophy that emphasizes the role of communication in achieving mutual understanding and coordination among individuals. Published in his seminal work *"The Theory of Communicative Action"* (1981), Habermas distinguishes between two types of actions:
@@ -280,9 +263,7 @@ The response:
 ### Animals as Ethical Beings
 
 The prompt:
-```bash
-$ openai_prompter --model "o1-mini" --prompt "Can animals feel pain, fear and anxiety, in any degree, comparable to humans? If so, concisely explain whether they are ethical beings, and, if so, should they have social and political rights? Why do they not have such rights?"
-```
+> Can animals feel pain, fear and anxiety, in any degree, comparable to humans? If so, concisely explain whether they are ethical beings, and, if so, should they have social and political rights? Why do they not have such rights?"
 
 The response:
 > Yes, scientific research has shown that many animals can experience pain, fear, and anxiety in ways comparable to humans, indicating they are sentient beings. Recognizing their sentience suggests that animals hold inherent ethical value, which has led some to argue for granting them certain social and political rights to ensure their welfare and protection. However, animals generally do not possess such rights widely because of factors like differing cognitive abilities, anthropocentric societal frameworks, and existing legal systems that prioritize human interests. Additionally, extending comprehensive rights to animals involves complex ethical, practical, and legal considerations that society continues to explore and debate.
@@ -291,4 +272,4 @@ Personal Evaluation
 -------------------
 Overall, the responses show a difference in quality in relation to the nature of the prompt questions: responses to factual, algorithmic, physical science questions are more satisfactory than responses to subjective, political or moral questions, where there is a lack of insight, detail, and a good deal of regurgitation of facts and phrases from the questions themselves.
 
-Any comparison between human thinking and the current generation of AI models is deeply flawed: the AI models are based on a design paradigm in which the human mind is a statistical pattern recognition machine, which I do not believe to be the case. I believe the human mind is far more subtle, capable of grasping patterns through understanding of cause and effect, and insight, rather than correlation, and is therefore much more efficint. It is also more creative in ways that the AI models cannot even begin to approach. And unlike human beings AI models do not have the organic consciousness, and therfore, their current form, cannot have a true sense of morality.
+Any comparison between human thinking and the current generation of AI models is deeply flawed: the AI models are based on a design paradigm in which the human mind is a statistical pattern recognition machine, which I do not believe to be the case. I believe the human thinking is far more subtle, capable of grasping patterns through understanding of cause and effect, and insight, rather than correlation, and is therefore much more efficient. It is also more creative in ways that the AI models cannot even begin to approach. And unlike human beings AI models do not have the organic consciousness, and therfore, their current form, cannot have a true sense of morality.
