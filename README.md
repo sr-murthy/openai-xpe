@@ -22,7 +22,7 @@ export OPENAI_API_KEY="<your API key>"
 $ openai_prompter --help
 Usage: openai_prompter [OPTIONS]
 
-  :py:class:`str` : Calls ``get_chat_completion`` to query the model with the
+  Calls ``get_chat_completion`` to query the model with the
   given prompt and prints the response.
 
 Options:
