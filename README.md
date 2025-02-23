@@ -5,8 +5,7 @@ A simple command line tool to run [OpenAI](https://openai.com/) model prompts.
 > [!Note]
 > You will need an [OpenAI platform API key](https://platform.openai.com/docs/api-reference/authentication) to use this tool.
 
-This README also includes a section showing prompts and responses from OpenAI's [o1-mini model](https://platform.openai.com/docs/models#o1), with some surprising and amusing results.
-
+This README also includes a section showing prompts and responses from OpenAI's [o1-mini model](https://platform.openai.com/docs/models#o1), ending with a personal evaluation.
 
 Installation & Setup
 --------------------
