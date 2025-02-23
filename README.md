@@ -260,7 +260,7 @@ The response:
 > 
 > By highlighting these issues, Habermas's theory underscores the importance of fostering environments that prioritize open, rational, and inclusive communication. Addressing the deficiencies in communicative action can strengthen democratic processes, enhance legitimacy, and promote more resilient and cohesive societies.Evaluation
 
-### Animals as Ethical Beings
+### 10. Animals as Ethical Beings
 
 The prompt:
 > Can animals feel pain, fear and anxiety, in any degree, comparable to humans? If so, concisely explain whether they are ethical beings, and, if so, should they have social and political rights? Why do they not have such rights?"
