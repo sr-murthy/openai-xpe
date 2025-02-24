@@ -5,7 +5,7 @@ A simple command line tool to run [OpenAI](https://openai.com/) model prompts.
 > [!Note]
 > You will need an [OpenAI platform API key](https://platform.openai.com/docs/api-reference/authentication) to use this tool.
 
-This README also includes a section showing prompts and responses from OpenAI's [o1-mini model](https://platform.openai.com/docs/models#o1), ending with a personal evaluation.
+This README also includes a section showing prompts and responses from OpenAI's [o1-mini model](https://platform.openai.com/docs/models#o1).
 
 Installation & Setup
 --------------------
@@ -266,9 +266,3 @@ The prompt:
 
 The response:
 > Yes, scientific research has shown that many animals can experience pain, fear, and anxiety in ways comparable to humans, indicating they are sentient beings. Recognizing their sentience suggests that animals hold inherent ethical value, which has led some to argue for granting them certain social and political rights to ensure their welfare and protection. However, animals generally do not possess such rights widely because of factors like differing cognitive abilities, anthropocentric societal frameworks, and existing legal systems that prioritize human interests. Additionally, extending comprehensive rights to animals involves complex ethical, practical, and legal considerations that society continues to explore and debate.
-
-Personal Evaluation
--------------------
-Overall, the responses show a difference in quality in relation to the nature of the prompt questions: responses to factual, algorithmic, physical science questions are more satisfactory than responses to subjective, political or moral questions, where there is a lack of insight, detail, and a good deal of regurgitation of facts and phrases from the questions themselves.
-
-On a more general note, any comparison between human thinking and the current generation of AI models is deeply flawed: the AI models are based on a design paradigm in which the human mind is a statistical pattern recognition machine, which I do not believe to be the case. I believe the human thinking is far more subtle, capable of grasping patterns through understanding of cause and effect, and insight, rather than correlation, and is therefore much more efficient. It is also more creative in ways that the AI models cannot even begin to approach. And unlike human beings AI models do not have organic consciousness, and therefore, in their current form, cannot have a true sense of morality.
